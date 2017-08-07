@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+.fixed-window-btns-box.two {
+	right: auto;
+	left: 20px;
+}
+
+.fixed-wb-icon {
+	background: url('../../img/fixedBtn/icon-btn.png') no-repeat;
+}
+.video-icon { background-position: 8px 0 }
+.net-icon { background-position: 8px -69px }
+.mod-icon { background-position: 8px -140px }

@@ -2,3 +2,8 @@
 
 /* 选择时间的样式 */
 @import url('parts/reset.css');
+
+/* 引用窗口固定按钮基础样式 */
+@import url('../../parts/fixedWinBtn/contents/css/layout.css');
+/* 添加自定义样式 */
+@import url('parts/fixedWinBtn.css')

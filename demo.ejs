@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<%- include('parts/head', {
+	<%- include('parts/head/main', {
 		title:'首页',
 		mobile: true,
 		css: [
@@ -9,6 +9,46 @@
 	}) %>
 <body>
 	
+	<%- include('parts/fixedWinBtn/main', {
+		btns: [
+			{
+				text: '视频',
+				href: '#',
+				icon: 'contents/img/fixedBtn/video-icon.png'
+			},
+			{
+				text: '联网',
+				href: '#',
+				icon: 'contents/img/fixedBtn/net-icon.png'
+			},
+			{
+				text: '模块',
+				href: '#',
+				icon: 'contents/img/fixedBtn/mod-icon.png'
+			}
+		]
+	}) %>
+
+	<%- include('parts/fixedWinBtn/main', {
+		css: 'two',
+		btns: [
+			{
+				text: '视频',
+				href: '#',
+				css: 'fixed-wb-icon video-icon'
+			},
+			{
+				text: '联网',
+				href: '#',
+				css: 'fixed-wb-icon net-icon'
+			},
+			{
+				text: '模块',
+				href: '#',
+				css: 'fixed-wb-icon mod-icon'
+			}
+		]
+	}) %>
 
 </body>
 </html>

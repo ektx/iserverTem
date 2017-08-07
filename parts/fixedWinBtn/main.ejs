@@ -1,0 +1,35 @@
+<%#
+	窗口固定按钮
+	------------------------------
+	author: ektx
+	date: 2017-8-7
+	version: 0.0.2
+	
+%>
+
+
+<%
+	let args = arguments[0]; 
+	// 按钮组
+	let btnArr = args.btns || [];
+	let css = args.css || '';
+%>
+
+<div class="fixed-window-btns-box <%= css %>">
+	<% for (let nav of btnArr) { %>
+	<%#= JSON.stringify(nav) %>
+		<a class="fixed-wb-btns" href="<%= nav.href || ''%>">
+			<% if (nav.icon) { %>
+			<figure>
+				<img src="<%= nav.icon %>" alt="">
+				<figcaption>
+					<%= nav.text || '' %>
+				</figcaption>
+			</figure>
+			<% } else if (nav.css) { %>
+			<i class="<%= nav.css %>"></i>
+			<p><%= nav.text || '' %></p>
+			<% } %>
+		</a>	
+	<% } %>
+</div>

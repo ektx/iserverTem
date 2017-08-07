@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+.fixed-window-btns-box {
+	position: fixed;
+	right: 20px;
+	top: 50%;
+	border: 1px solid #ddd;
+
+	width: 80px;
+	background: #fff;
+}
+
+.fixed-wb-btns {
+	display: block;
+	width: 100%;
+	color: #666;
+	text-align: center;
+}
+.fixed-wb-btns:not(:last-child) {
+	border-bottom: 1px solid #ddd;
+}
+.fixed-wb-btns p,
+.fixed-wb-btns figcaption {
+	width: 5em;
+	margin: -.3em auto .2em;
+	line-height: 1.2em;
+}
+
+.fixed-wb-btns i {
+	display: block;
+	height: 50px;
+}
