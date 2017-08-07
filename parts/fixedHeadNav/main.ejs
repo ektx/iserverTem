@@ -1,0 +1,31 @@
+
+<% 
+	let navOptions = arguments[0];
+	
+	// 输出attr
+	let getVal = (key, obj, attr) => {
+		let result = obj[key] ? obj[key] : '';
+		
+		// 如果没有值,输出空
+		if (!result) {
+			return result;
+		}
+
+		if (attr) {
+			return `${attr}=${result}`
+		} else {
+			return result
+		}
+	}
+%>
+
+<nav class="wx-nav flex-box <%= getVal('css', navOptions) %>">
+	<% for (let nav of link) { %>
+	<a <%= getVal('href', nav, 'href') %>
+	   <%= getVal('css', nav, 'class') %>
+	   <%= getVal('id', nav, 'id') %>
+	>
+		<%= nav.name %>
+	</a>
+	<% } %>
+</nav>

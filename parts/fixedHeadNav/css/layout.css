@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+/*
+
+*/
+
+.wx-nav {
+	height: .6rem;
+	width: 100%;
+	font-size: .27rem;
+	background-color: #f3f3f3;
+	border-bottom: .5px solid #bfbfbf;
+}
+.wx-nav a {
+	color: #333;
+	line-height: .6rem;
+}
+
+.wx-nav a {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	    flex: 1;
+	text-align: center;
+}
+.wx-nav a.active {
+	color: #fff;
+	background: #40c8c4;
+}
